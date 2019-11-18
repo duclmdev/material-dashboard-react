@@ -98,9 +98,9 @@ material-dashboard-react
 │   ├── index.html
 │   └── manifest.json
 └── src
-    ├── index.js
+    ├── index.jsx
     ├── logo.svg
-    ├── routes.js
+    ├── routes.jsx
     ├── assets
     │   ├── css
     │   │   └── material-dashboard-react.css
@@ -117,18 +117,18 @@ material-dashboard-react
     │       └── material-dashboard-react.js
     ├── components
     │   ├── Card
-    │   │   ├── Card.js
-    │   │   ├── CardAvatar.js
-    │   │   ├── CardBody.js
-    │   │   ├── CardFooter.js
-    │   │   ├── CardHeader.js
-    │   │   └── CardIcon.js
+    │   │   ├── Card.jsx
+    │   │   ├── CardAvatar.jsx
+    │   │   ├── CardBody.jsx
+    │   │   ├── CardFooter.jsx
+    │   │   ├── CardHeader.jsx
+    │   │   └── CardIcon.jsx
     │   ├── CustomButtons
-    │   │   └── Button.js
+    │   │   └── Button.jsx
     │   ├── CustomInput
-    │   │   └── CustomInput.js
+    │   │   └── CustomInput.jsx
     │   ├── CustomTabs
-    │   │   └── CustomTabs.js
+    │   │   └── CustomTabs.jsx
     │   ├── FixedPlugin
     │   │   └── FixedPlugin.js
     │   ├── Footer
@@ -158,11 +158,11 @@ material-dashboard-react
     │       ├── Success.js
     │       └── Warning.js
     ├── layouts
-    │   ├── Admin.js
-    │   └── RTL.js
+    │   ├── Admin.jsx
+    │   └── RTL.jsx
     ├── variables
-    │   ├── charts.js
-    │   └── general.js
+    │   ├── charts.jsx
+    │   └── general.jsx
     └── views
         ├── Dashboard
         │   └── Dashboard.js
