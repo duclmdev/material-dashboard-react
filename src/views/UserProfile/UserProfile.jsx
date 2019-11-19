@@ -65,8 +65,7 @@ export default function UserProfile() {
 
                             <GridContainer>
                                 <GridItem xs={12} sm={12} md={6}>
-                                    <CustomInput id="first-name" labelText="First Name"
-                                                 formControlProps={{fullWidth: true}}/>
+                                    <CustomInput id="first-name" labelText="First Name" formControlProps={{fullWidth: true}}/>
                                 </GridItem>
                                 <GridItem xs={12} sm={12} md={6}>
                                     <CustomInput id="last-name" labelText="Last Name"
@@ -75,8 +74,7 @@ export default function UserProfile() {
                             </GridContainer>
                             <GridContainer>
                                 <GridItem xs={12} sm={12} md={4}>
-                                    <CustomInput id="city" labelText="City"
-                                                 formControlProps={{fullWidth: true}}/>
+                                    <CustomInput id="city" labelText="City" formControlProps={{fullWidth: true}}/>
                                 </GridItem>
                                 <GridItem xs={12} sm={12} md={4}>
                                     <CustomInput id="country" labelText="Country"
@@ -90,11 +88,9 @@ export default function UserProfile() {
                             <GridContainer>
                                 <GridItem xs={12} sm={12} md={12}>
                                     <InputLabel style={{color: "#AAAAAA"}}>About me</InputLabel>
-                                    <CustomInput
-                                        id="about-me"
-                                        labelText="Lamborghini Mercy, Your chick she so thirsty, I'm in that two seat Lambo."
-                                        formControlProps={{fullWidth: true}}
-                                        inputProps={{multiline: true, rows: 5}}/>
+                                    <CustomInput id="about-me" labelText="Lamborghini Mercy, Your chick she so thirsty, I'm in that two seat Lambo."
+                                                 formControlProps={{fullWidth: true}}
+                                                 inputProps={{multiline: true, rows: 5}}/>
                                 </GridItem>
                             </GridContainer>
                         </CardBody>
@@ -113,11 +109,7 @@ export default function UserProfile() {
                         <CardBody profile>
                             <h6 className={classes.cardCategory}>CEO / CO-FOUNDER</h6>
                             <h4 className={classes.cardTitle}>Alec Thompson</h4>
-                            <p className={classes.description}>
-                                Don{"'"}t be scared of the truth because we need to restart the
-                                human foundation in truth And I love you like Kanye loves Kanye
-                                I love Rick Owens’ bed design but the back is...
-                            </p>
+                            <p className={classes.description}>Don{"'"}t be scared of the truth because we need to restart the human foundation in truth And I love you like Kanye loves Kanye I love Rick Owens’ bed design but the back is...</p>
                             <Button color="primary" round>Follow</Button>
                         </CardBody>
                     </Card>

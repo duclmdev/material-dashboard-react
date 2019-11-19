@@ -144,14 +144,11 @@ export default function Dashboard() {
                 <GridItem xs={12} sm={12} md={4}>
                     <Card chart>
                         <CardHeader color="warning">
-                            <ChartistGraph
-                                className="ct-chart"
+                            <ChartistGraph type="Bar" className="ct-chart"
                                 data={emailsSubscriptionChart.data}
-                                type="Bar"
                                 options={emailsSubscriptionChart.options}
                                 responsiveOptions={emailsSubscriptionChart.responsiveOptions}
-                                listener={emailsSubscriptionChart.animation}
-                            />
+                                listener={emailsSubscriptionChart.animation}/>
                         </CardHeader>
                         <CardBody>
                             <h4 className={classes.cardTitle}>Email Subscriptions</h4>
@@ -168,12 +165,10 @@ export default function Dashboard() {
                     <Card chart>
                         <CardHeader color="danger">
                             <ChartistGraph
-                                className="ct-chart"
+                                className="ct-chart" type="Line"
                                 data={completedTasksChart.data}
-                                type="Line"
                                 options={completedTasksChart.options}
-                                listener={completedTasksChart.animation}
-                            />
+                                listener={completedTasksChart.animation}/>
                         </CardHeader>
                         <CardBody>
                             <h4 className={classes.cardTitle}>Completed Tasks</h4>
@@ -192,8 +187,8 @@ export default function Dashboard() {
                     <CustomTabs
                         title="Tasks:"
                         headerColor="primary"
-                        tabs={[
-                            {
+                        tabs={
+                            [{
                                 tabName: "Bugs",
                                 tabIcon: BugReport,
                                 tabContent: <Tasks checkedIndexes={[0, 3]} tasksIndexes={[0, 1, 2, 3]} tasks={bugs}/>
@@ -206,8 +201,8 @@ export default function Dashboard() {
                                 tabName: "Server",
                                 tabIcon: Cloud,
                                 tabContent: <Tasks checkedIndexes={[1]} tasksIndexes={[0, 1, 2]} tasks={server}/>
-                            }
-                        ]}/>
+                            }]
+                        }/>
                 </GridItem>
                 <GridItem xs={12} sm={12} md={6}>
                     <Card>
@@ -216,16 +211,14 @@ export default function Dashboard() {
                             <p className={classes.cardCategoryWhite}>New employees on 15th September, 2016</p>
                         </CardHeader>
                         <CardBody>
-                            <Table
-                                tableHeaderColor="warning"
+                            <Table tableHeaderColor="warning"
                                 tableHead={["ID", "Name", "Salary", "Country"]}
                                 tableData={[
                                     ["1", "Dakota Rice", "$36,738", "Niger"],
                                     ["2", "Minerva Hooper", "$23,789", "Curaçao"],
                                     ["3", "Sage Rodriguez", "$56,142", "Netherlands"],
                                     ["4", "Philip Chaney", "$38,735", "Korea, South"]
-                                ]}
-                            />
+                                ]}/>
                         </CardBody>
                     </Card>
                 </GridItem>

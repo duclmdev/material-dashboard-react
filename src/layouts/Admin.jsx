@@ -22,11 +22,13 @@ let ps;
 
 const switchRoutes = (
     <Switch>
-        {routes.map((prop, key) => {
+        {
+            routes.map((prop, key) => {
             return prop.layout === "/admin"
                 ? <Route path={prop.layout + prop.path} component={prop.component} key={key}/>
                 : null;
-        })}
+        })
+        }
         <Redirect from="/admin" to="/admin/dashboard"/>
     </Switch>
 );

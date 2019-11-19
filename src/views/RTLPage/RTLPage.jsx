@@ -2,10 +2,10 @@
 import React from "react";
 // react plugin for creating charts
 import ChartistGraph from "react-chartist";
-// @material-ui/core
+
 import {makeStyles} from "@material-ui/core/styles";
 import Icon from "@material-ui/core/Icon";
-// @material-ui/icons
+
 import Store from "@material-ui/icons/Store";
 import Warning from "@material-ui/icons/Warning";
 import DateRange from "@material-ui/icons/DateRange";
@@ -146,8 +146,7 @@ export default function RTLPage() {
                                 data={dailySalesChart.data}
                                 type="Line"
                                 options={dailySalesChart.options}
-                                listener={dailySalesChart.animation}
-                            />
+                                listener={dailySalesChart.animation}/>
                         </CardHeader>
                         <CardBody>
                             <h4 className={classes.cardTitle}>فروش روزانه</h4>
